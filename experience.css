@@ -1,0 +1,457 @@
+/* body */
+body{
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+/* header */
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+header > nav > ul > li{
+    list-style-type: none;
+    background-color: #FF9966;
+    margin: 0px 15px 0px 15px;
+    padding: 15px;
+    border-radius: 15px;
+    
+    display: none;
+}
+
+header > nav > ul > li:hover{
+    transform: scale(1.07);
+    background-color:  #FFB380;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+header > nav > ul{
+    display: flex;
+    justify-content: right;
+}
+
+header > nav span{
+    display: flex;
+    font-size: 30pt;
+    font-weight: bold;
+
+    margin: 0px 0px 0px 0px;
+    margin-right: auto;
+    color: rgb(51, 143, 159);
+
+    position: relative;
+    left: 10px;
+    /* justify-tracks: left; */
+    
+    /* border: 10px solid #000000; */
+}
+
+header nav{
+    /* align-items: center; */
+    /* justify-content: ; */
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header{
+    border-bottom: 7px solid rgb(196, 188, 188);
+    padding-top: 1px;
+    background-color: var(--header-bg-dark);
+
+    box-shadow: 1px 1px 5px #000000;
+    margin-bottom: 10px;
+
+    position: sticky;
+    top: 0;
+}
+/* hamburger */
+.hamburger{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: 30px;
+    /* position: relative; */
+    /* right: 30px; */
+    
+}
+/* bar */
+.bar{
+    width: 50px;/*or 60px*/
+    height: 8px;/*or 10px*/
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    margin-bottom: 7px;
+}
+/* /bar */
+/* /hamburger */
+
+/* sun */
+.fa-sun{
+    display: flex;
+    color: var(--text-dark);
+
+    font-size: 20pt;
+    position: relative;
+    left: 34%;
+}
+#normal-sun{
+    display: none;
+}
+#mobile-sun{
+    position: relative;
+    left: 30%;
+    /* left: 40px; */
+}
+/* /sun */
+
+/* moon */
+.fa-moon{
+    display: flex;
+    color: var(--text-light);
+
+    font-size: 20pt;
+    position: relative;
+    left: 34%;
+}
+#normal-moon{
+    display: none;
+}
+#mobile-moon{
+    position: relative;
+    left: 30%;
+
+    display: none;
+    /* left: 40px; */
+}
+/* /moon */
+
+/* mobile_nav */
+#mobile_nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+/* /mobile_nav */
+/* /header */
+
+/* mobile_menu */
+#mobile_menu{
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 0;
+    position: absolute;
+    top: 80px;
+    width: 100vw;
+    height: 100%;
+
+    margin: 0;
+    /* overflow: none; */
+    /* justify-content: center; */
+
+    display: none;
+}
+#mobile_menu button{
+    /* background-color: var(--bg-dark); */
+    background: linear-gradient(to right, #09405c, var(--bg-dark) );
+    border: transparent;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 20px;
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 18px; */
+}
+#mobile_menu button a{
+    text-decoration: none;
+    text-align: left;
+}
+.fullscreen{
+    /* border: 10px solid #000000; */
+    background-color: var(--bg-dark);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    /* overflow: hidden; */
+}
+/* /mobile_menu */
+
+/* main */
+main{
+    margin: 0px 32px 0px 32px;
+}
+/* sub-section */
+.sub-section{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    /* max-width: 84%; */
+
+    color: #ffffff;
+    /* border: 10px solid #ffffff; */
+}
+.sub-section > .card{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 20px 20px 20px;
+    /* margin-top: 45px; */
+    margin-bottom: 25px;
+    
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px #000000;
+
+    background-color: var(--bg-dark);
+}
+.card:hover{
+    transition: 1s ease;
+    box-shadow: 10px 10px 20px #000000;
+}
+.sub-section h2{
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ffffff;
+    font-size: 1.5rem;
+    /* margin-bottom: 0; */
+}
+.sub-section .title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+}
+.sub-section .date{
+    margin: 0;
+    color: var(--text-sec);
+    text-align: center;
+}
+/* /sub-section */
+/* /main */
+
+/* footer */
+footer{
+    flex-direction: column;
+    
+    background-color: var(--footer-bg-dark);
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+}
+footer ul{
+    flex-direction: column;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    color: var(--text-dark);
+}
+footer txt{
+    display: none;
+    color: var(--text-dark);
+}
+footer ul{
+    display: flex;
+
+    padding-right: 40px;
+    /* OR */
+    /* position: relative;
+    right: 18px; */
+}
+footer ul li{
+    list-style-type: none;    
+}
+footer ul li a{
+    text-decoration: underline;
+    color: var(--text-dark);
+}
+/* /footer */
+/* /body */
+
+a:visited{
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+
+@media only screen and (min-width: 600px)
+{
+    /* body */
+
+    /* header */
+    header nav{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    header > nav span{
+        margin-left: 13px;
+    }
+    header > nav > ul > li{
+        display: flex;
+        height: 23px;
+        /* width: auto; */
+    }
+    /* sun */
+    .fa-sun{
+        display: flex;
+        color: var(--text-dark);
+    
+        font-size: 20pt;
+        position: relative;
+        left: 15px;
+    }
+    #normal-sun{
+        display: flex;
+    }
+    #mobile-sun{
+        display: none;
+    }
+    /* /sun */
+
+    /* moon */
+    .fa-moon{
+        display: flex;
+        color: var(--text-light);
+
+        font-size: 20pt;
+        position: relative;
+        left: 15px;
+    }
+    #normal-moon{
+        display: none;
+    }
+    #mobile-moon{
+        display: none;
+    }
+    /* /moon */
+
+    /* hamburger */
+    .hamburger{
+        display: none;        
+    }
+    /* /hamburger */
+    /* /header */
+
+    /* main */
+    main{
+        margin: 0px 5px 0px 5px;
+    }
+    /* sub-section */
+    .sub-section{
+        display: flex;
+        flex-direction: column;
+
+        margin: 0 auto;
+        max-width: 84%;
+
+        color: #ffffff;
+        /* border: 10px solid #ffffff; */
+    }
+    .sub-section > .card{
+        display: flex;
+        flex-direction: column;
+
+        padding: 0px 20px 20px 20px;
+        /* margin-top: 45px; */
+        margin-bottom: 25px;
+        
+        color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px #000000;
+
+        background-color: var(--abg-dark);
+    }
+    .card:hover{
+        transition: 1s ease;
+        box-shadow: 10px 10px 20px #000000;
+    }
+    .sub-section h2{
+        padding-bottom: 8px;
+        border-bottom: 2px solid #ffffff;
+        font-size: 1.5rem;
+        /* margin-bottom: 0; */
+    }
+    .sub-section .title{
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 0;
+
+        text-align: left;
+    }
+    .sub-section .date{
+        margin: 0;
+        color: var(--text-sec);
+
+        text-align: left;
+    }
+    /* /sub-section */
+    /* /main */
+
+    /* footer */
+    footer{
+        position: sticky;
+        bottom: 0;
+
+        flex-direction: row;
+    }
+    footer ul{
+        flex-direction: row;
+    }
+    footer txt{
+        display: flex;
+    }
+    footer ul li{
+        position: relative;
+        right: 40px;
+
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /* /footer */
+
+    /* /body */
+
+    
+}
+
+.fa-moon{
+    /* display: none; */
+    color: var(--header-bg-dark);
+}
+.fa-sun{
+    /* display: none; */
+    color: var(--header-bg-dark);
+}
+
+:root {
+    --bg-light: #ffffff;
+    --bg-dark: #004f6d;
+    --header-bg-dark: #0c3b57;
+    --header-bg-light: #f4f4f5;
+    --nav-bg-light: ;
+    --footer-bg-dark: #0c3b57;
+    --footer-bg-light: #f4f4f5;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+    --text-sec: #c7cdcf;
+    /* --primary-light: ; */
+    /* --primary-dark: ; */
+    --button-light: linear-gradient(#141cfc, #304cf4);
+    /* --button-dark: ; */
+}

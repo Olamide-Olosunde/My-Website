@@ -1,0 +1,35 @@
+.box{
+    /* border: 1px solid; */
+    border-radius: 14px;
+
+    max-width: 50%;
+    margin: 0 auto;
+    /* background-color: #FFFAFA; */
+    padding: 10px;
+}
+.box-body{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+
+    max-width: 98%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.card{
+    /* border: 1px solid; */
+
+    /* box-shadow: 5px 5px 10px black; */
+    border-radius: 10px;
+    padding: 10px;
+    /* background-color: white; */
+}
+.card-head{
+    text-align: center;
+    font-size: 13.5pt;
+}
+.card:hover{
+    transition: 3s ease;
+    transform: scale(1.07);
+    box-shadow: 2px 2px 10px black;
+}
