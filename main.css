@@ -167,7 +167,7 @@ header{
 
     padding-left: 0;
     position: fixed;
-    top: 80px;
+    top: 85px;
     width: 100vw;
     height: 100vh;
 
@@ -191,6 +191,7 @@ header{
 #mobile_menu button a{
     text-decoration: none;
     text-align: left;
+    color: var(--text-dark);
 }
 .fullscreen{
     /* border: 10px solid #000000; */
