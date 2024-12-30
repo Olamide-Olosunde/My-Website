@@ -167,7 +167,7 @@ header{
 
     padding-left: 0;
     position: fixed;
-    top: 85px;
+    top: 75px;
     width: 100vw;
     height: 100vh;
 
@@ -188,7 +188,7 @@ header{
     /* position: absolute; */
     /* bottom: 18px; */
 }
-#mobile_menu button a{
+#mobile_menu button{
     text-decoration: none;
     text-align: left;
     color: var(--text-dark);
@@ -211,6 +211,7 @@ header{
 /* main */
 main{
     margin: 0px 32px 0px 32px;
+    flex: 1;
 }
 /* sub-section */
 .sub-section{
