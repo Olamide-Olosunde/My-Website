@@ -7,6 +7,11 @@ sampleelement[data-theme="dark"] {
 }
 */
 
+/* html */
+html{
+    background-color: var(--header-bg-dark);
+}
+
 /* body */
 body{
     background-color: var(--bg-dark);
@@ -302,7 +307,9 @@ footer ul li a{
     color: var(--text-dark);
 }
 /* /footer */
+
 /* /body */
+/* /html */
 
 
 
