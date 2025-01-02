@@ -315,6 +315,9 @@ footer ul li a{
 
 
 /* a */
+a{
+    color: var(--text-dark);
+}
 a:visited{
     text-decoration: none;
     color: #ffffff;
