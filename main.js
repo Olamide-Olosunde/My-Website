@@ -54,6 +54,8 @@ function Hamburger()
     // count++;
 }
 
+
+
 // function toggle(){
 //     var sun = document.querySelector('.fa-sun');
 //     var moon = document.querySelector('.fa-moon');
