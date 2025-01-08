@@ -7,8 +7,8 @@ https://iamola.net/
 <h1>Directory</h1>
 <ul>
   <li><code>index.html</code>: Overall summary of me and my academic journey.</li>
-  <li><code>experience.html</code>: Employment journey as well as on-capmus activites that I am or have engaged in.</li>
-  <li><code>projects.html</code>: Contains some projects that I've worked on.</li>
+  <li><code>experience.html</code>: Employment journey as well as on-campus activites that I am or have engaged in.</li>
+  <li><code>projects.html</code>: Contains some projects I've worked on.</li>
 </ul>
 
 <p>I'm open to website suggestions and improvements.</p>
