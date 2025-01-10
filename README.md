@@ -11,6 +11,7 @@ https://iamola.net/
   <li><code>projects.html</code>: Contains some projects I've worked on.</li>
 </ul>
 
-<p>I'm open to website suggestions and improvements.</p>
+<p>This website was made to showcase my skills in HTML, CSS and JavaScript. I'm open to website suggestions and improvements.</p>
 
+<!-- Intentionally did not use HTML below -->
 For comments or employment opportunities, please contact me on [LinkedIn](https://www.linkedin.com/in/olamide-olosunde-42a9b32aa).
