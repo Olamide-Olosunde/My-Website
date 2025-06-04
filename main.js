@@ -34,13 +34,13 @@ function Hamburger()
         //turn the hamburger to 'x'
         bar[0].style.rotate = '45deg';
         bar[0].style.position = 'relative';
-        bar[0].style.top = '15px';
+        bar[0].style.top = '12.5px';
 
         bar[1].style.opacity = 0;
 
         bar[2].style.rotate = '-45deg';
         bar[2].style.position = 'relative';
-        bar[2].style.bottom = '15px';
+        bar[2].style.bottom = '12.5px';
 
         //add ease
         // bar.style.transition = '0.3s ease';
@@ -75,6 +75,8 @@ var mobile_moon_display = window.getComputedStyle(mobile_moon).display;
 var normal_sun_display = window.getComputedStyle(normal_sun).display;
 var normal_moon_display = window.getComputedStyle(normal_moon).display;
 
+let bar = document.querySelectorAll('.hamburger .bar');
+
 if( localStorage.getItem('theme') === 'dark' )
 {
     //if mobile
@@ -82,12 +84,19 @@ if( localStorage.getItem('theme') === 'dark' )
     {
         mobile_moon.style.display = 'none';
         mobile_sun.style.display = 'flex';
+        normal_moon.style.display = 'none';
+        normal_sun.style.display = 'none';
+        // bar[0].style.backgroundColor = "#fff";
+        // bar[1].style.backgroundColor = "#fff";
+        // bar[2].style.backgroundColor = "#fff";
     }else{
         //if not mobile
         if( normal_moon_display === 'flex' )
         {
             normal_moon.style.display = 'none';
             normal_sun.style.display = 'flex';
+            mobile_moon.style.display = 'none';
+            mobile_sun.style.display = 'none';
         }
     }
 } else if( localStorage.getItem('theme') === 'light' ){
@@ -96,12 +105,19 @@ if( localStorage.getItem('theme') === 'dark' )
     {
         mobile_sun.style.display = 'none';
         mobile_moon.style.display = 'flex';
+        normal_moon.style.display = 'none';
+        normal_sun.style.display = 'none';
+        bar[0].style.backgroundColor = "#000";
+        bar[1].style.backgroundColor = "#000";
+        bar[2].style.backgroundColor = "#000";
     }else{
         //if not mobile
         if( normal_sun_display === 'flex' )
         {
             normal_sun.style.display = 'none';
             normal_moon.style.display = 'flex';
+            mobile_moon.style.display = 'none';
+            mobile_sun.style.display = 'none';
         }
     }
 }
@@ -121,8 +137,11 @@ function toggle(){
     var normal_sun_display = window.getComputedStyle(normal_sun).display;
     var normal_moon_display = window.getComputedStyle(normal_moon).display;
 
-    if( newTheme != currentTheme )
-    {
+    // let hamburger = document.querySelector('.hamburger');
+    // let bar = document.querySelectorAll('.hamburger .bar');
+
+    // if( newTheme != currentTheme )
+    // {
         if( newTheme === 'light' )
         {
             //if mobile
@@ -130,12 +149,19 @@ function toggle(){
             {
                 mobile_sun.style.display = 'none';
                 mobile_moon.style.display = 'flex';
+                normal_moon.style.display = 'none';
+                normal_sun.style.display = 'none';
+                bar[0].style.backgroundColor = "#000";
+                bar[1].style.backgroundColor = "#000";
+                bar[2].style.backgroundColor = "#000";
             }else{
                 //if not mobile
                 if( normal_sun_display === 'flex' )
                 {
                     normal_sun.style.display = 'none';
                     normal_moon.style.display = 'flex';
+                    mobile_moon.style.display = 'none';
+                    mobile_sun.style.display = 'none';
                 }
             }
         } else if( newTheme === 'dark' )
@@ -145,17 +171,24 @@ function toggle(){
             {
                 mobile_moon.style.display = 'none';
                 mobile_sun.style.display = 'flex';
+                normal_moon.style.display = 'none';
+                normal_sun.style.display = 'none';
+                bar[0].style.backgroundColor = "#fff";
+                bar[1].style.backgroundColor = "#fff";
+                bar[2].style.backgroundColor = "#fff";
             }else{
                 //if not mobile
                 if( normal_moon_display === 'flex' )
                 {
                     normal_moon.style.display = 'none';
                     normal_sun.style.display = 'flex';
+                    mobile_moon.style.display = 'none';
+                    mobile_sun.style.display = 'none';
                 }
             }
             
         }
-    }
+    // }
 
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
