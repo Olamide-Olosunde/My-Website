@@ -34,13 +34,13 @@ function Hamburger()
         //turn the hamburger to 'x'
         bar[0].style.rotate = '45deg';
         bar[0].style.position = 'relative';
-        bar[0].style.top = '12.5px';
+        bar[0].style.top = '12.2px';
 
         bar[1].style.opacity = 0;
 
         bar[2].style.rotate = '-45deg';
         bar[2].style.position = 'relative';
-        bar[2].style.bottom = '12.5px';
+        bar[2].style.bottom = '12.2px';
 
         //add ease
         // bar.style.transition = '0.3s ease';
@@ -101,18 +101,18 @@ if( localStorage.getItem('theme') === 'dark' )
     }
 } else if( localStorage.getItem('theme') === 'light' ){
     //if mobile
-    if( mobile_moon_display != 'none' )//mobile_sun_display === 'flex' )
+    if( /*mobile_moon_display != 'none' )//*/mobile_sun_display === 'flex' )
     {
         mobile_sun.style.display = 'none';
         mobile_moon.style.display = 'flex';
         normal_moon.style.display = 'none';
         normal_sun.style.display = 'none';
-        bar[0].style.backgroundColor = "#000";
-        bar[1].style.backgroundColor = "#000";
-        bar[2].style.backgroundColor = "#000";
+        // bar[0].style.backgroundColor = "#000";
+        // bar[1].style.backgroundColor = "#000";
+        // bar[2].style.backgroundColor = "#000";
     }else{
         //if not mobile
-        if( normal_moon_display != 'none' )//normal_sun_display === 'flex' )
+        if( /*normal_moon_display != 'none' )//*/normal_sun_display === 'flex' )
         {
             normal_sun.style.display = 'none';
             normal_moon.style.display = 'flex';
