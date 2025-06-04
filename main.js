@@ -80,7 +80,7 @@ let bar = document.querySelectorAll('.hamburger .bar');
 if( localStorage.getItem('theme') === 'dark' )
 {
     //if mobile
-    if( mobile_moon_display === 'flex' )//it means the moon's there
+    if( mobile_sun_display != 'none' )//mobile_moon_display === 'flex' )//it means the moon's there
     {
         mobile_moon.style.display = 'none';
         mobile_sun.style.display = 'flex';
@@ -91,7 +91,7 @@ if( localStorage.getItem('theme') === 'dark' )
         // bar[2].style.backgroundColor = "#fff";
     }else{
         //if not mobile
-        if( normal_moon_display === 'flex' )
+        if( normal_sun_display != 'none' )//normal_moon_display === 'flex' )
         {
             normal_moon.style.display = 'none';
             normal_sun.style.display = 'flex';
@@ -101,7 +101,7 @@ if( localStorage.getItem('theme') === 'dark' )
     }
 } else if( localStorage.getItem('theme') === 'light' ){
     //if mobile
-    if( mobile_sun_display === 'flex' )
+    if( mobile_moon_display != 'none' )//mobile_sun_display === 'flex' )
     {
         mobile_sun.style.display = 'none';
         mobile_moon.style.display = 'flex';
@@ -112,7 +112,7 @@ if( localStorage.getItem('theme') === 'dark' )
         bar[2].style.backgroundColor = "#000";
     }else{
         //if not mobile
-        if( normal_sun_display === 'flex' )
+        if( normal_moon_display != 'none' )//normal_sun_display === 'flex' )
         {
             normal_sun.style.display = 'none';
             normal_moon.style.display = 'flex';
