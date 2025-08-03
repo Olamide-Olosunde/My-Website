@@ -35,7 +35,7 @@ header > nav > ul > li{
 header > nav > ul > li:hover{
     transform: scale(1.07);
     transition: 0.5s ease;
-    background-color:  #FFB380;
+    background-color: var(--nav-buttons-hover);
     box-shadow: 5px 5px 10px #000000;
 }
 
@@ -84,7 +84,6 @@ header{
     z-index: 10;
 
     animation: slide-down 1s ease-in forwards;
-    /* animation-delay: 1s; */
 }
 /* hamburger */
 .hamburger{
@@ -114,7 +113,7 @@ header{
 /* sun */
 .fa-sun{
     display: flex;
-    color: var(--text-color);
+    color: var(--sun-moon-color);
 
     font-size: 20pt;
     position: relative;
@@ -125,14 +124,13 @@ header{
 }
 #mobile-sun{
     margin-right: 70%;
-    /*padding-left: 10px;/*for big thumbs*/
 }
 /* /sun */
 
 /* moon */
 .fa-moon{
     display: flex;
-    color: #000000;
+    color: var(--sun-moon-color);
 
     font-size: 20pt;
     position: relative;
@@ -145,7 +143,6 @@ header{
     margin-right: 70%;
 
     display: none;
-    /*padding-left: 10px;/*for big thumbs*/
 }
 /* /moon */
 
@@ -204,7 +201,6 @@ main{
     flex: 1;
 
     animation: fade-in 1s ease-in forwards;
-    /* animation-delay: 2s; */
 }
 /* sub-section */
 .sub-section{
@@ -261,7 +257,6 @@ footer{
     justify-content: center;
 
     animation: slide-up 1s ease-in forwards;
-    /* animation-delay: 4s; */
 }
 footer a{
     text-decoration: none;
@@ -318,17 +313,6 @@ header a:hover{
     color: var(--header-link-color);
 }
 
-a:link{
-
-}
-
-a:hover{
-
-}
-
-a:active{
-
-}
 
 
 
@@ -371,12 +355,11 @@ a:active{
     header > nav > ul > li{
         display: flex;
         height: 23px;
-        /* width: auto; */
     }
     /* sun */
     .fa-sun{
         display: flex;
-        color: var(--text-color);
+        color: var(--sun-moon-color);
     
         font-size: 20pt;
         position: relative;
@@ -393,8 +376,7 @@ a:active{
     /* moon */
     .fa-moon{
         display: flex;
-        /* color: var(--text-light);stth */
-        color: #000000;
+        color: var(--sun-moon-color);
 
         font-size: 20pt;
         position: relative;
@@ -428,14 +410,12 @@ a:active{
         max-width: 84%;
 
         color: var(--text-color);
-        /* border: 10px solid #ffffff; */
     }
     .sub-section > .card{
         display: flex;
         flex-direction: column;
 
         padding: 0px 20px 20px 20px;
-        /* margin-top: 45px; */
         margin-bottom: 25px;
         
         color: var(--text-color);
@@ -452,7 +432,6 @@ a:active{
         padding-bottom: 8px;
         border-bottom: 2px solid var(--text-color);
         font-size: 1.5rem;
-        /* margin-bottom: 0; */
     }
     .sub-section .title{
         font-size: 1.3rem;
@@ -503,8 +482,6 @@ a:active{
     #main_box{
         display: flex;
         flex-direction: row;
-        /* display: grid; */
-        /* grid-template-columns: repeat(2, 1fr); */
 
         max-width: 80%;
         margin-top: 25px;
@@ -520,12 +497,8 @@ a:active{
         background-color: var(--background-dark);
         box-shadow: 5px 5px 30px var(--shadow-color);
 
-        /* color: rgb(196, 188, 188); */
-        
         color: var(--text-color);
         border-radius: 10px;
-
-        /* border: 10px solid; */
     }
     #main_box:hover{
         transition: 1s ease;
@@ -533,14 +506,6 @@ a:active{
     }
     #main_box > #box{
         display: flex;
-        /* margin-right: 3%; */
-        /* margin-left: 20px; */
-        /* float: right; */
-
-        /* position: relative; */
-        /* left: 70%; */
-
-        /* border: 10px solid; */
     }
     #main_box > #prompt{
         display: flex;
@@ -548,26 +513,17 @@ a:active{
         max-width: 600px;
         height: auto;
 
-        /* max-width: 60%; */
         justify-content: center;
-        /* position: absolute; */
         margin-right: 20px;
-        /* margin-left: 3%; */
-
-        /* margin-left: 70px; */
-
-        /* border: 10px solid; */
     }
     #main_box > #prompt > h1{
         display: inline;
         margin-bottom: 10px;
-        /* border: 10px solid; */
         font-size: 30pt;
     }
     #main_box > #prompt > p{
         text-align: justify;
         box-sizing: border-box;
-        /* border: 10px solid; */
     }
     @media only screen and (max-width: 800px)
     {
@@ -579,13 +535,6 @@ a:active{
 
 
 
-    
-    name{
-        text-align: center;
-        text-color: #999999;
-
-    }
-
     .photo{
         display: block;
         margin-left: auto;
@@ -595,10 +544,7 @@ a:active{
     }
 
     .tech_skills, p{
-        /* margin-left: 100px; */
         display: flex;
-        /* border-left: 9px solid #000000; */
-        
     }
 
     .soft_skills{
@@ -642,59 +588,41 @@ a:active{
 /* root */
 :root {
     --bg-color: #ffffff;
-    --header-bg-color: #d6d6d7;
-    --footer-bg-color: #d6d6d7;/*#b1b1b3;*/
+    --header-bg-color: #E5E5E5;
+    --footer-bg-color: #E5E5E5;
     --text-color: #000000;
     --text-sec-color: #747676;
-    --navigator-bg-color: ;/*subject to change, maybe #006699, #CC6600*/
-    
-    --navtitle-color: #000000;
     --link-color: #000000;
     --link-color-hover: #0000ff;
+    
+    --navigator-bg-color: #d3d3d3;
+    --navtitle-color: #000;
     --header-link-color: #000000;
     --shadow-color: #9a9999;
     
-    --header-border-bottom-color: #C9B79C;/*#71816D;/*var(--header-bg-color);/*#FF9966;/*#F5F5DC;/*#FFFFF0;/*#E6E6FA;*/
-    --button-color: linear-gradient(to left, #d3d3d3, #ffffff);
+    --header-border-bottom-color: #d3d3d3;
+    --button-color: linear-gradient(to left, #E5E5E5, #ffffff);
     --bar-color: #000;
+    --nav-buttons-hover: #d3d3d3;
+    --sun-moon-color: var(--text-color);
 }
 [data-theme="dark"]{
-    --bg-color: #004f6d;
-    --header-bg-color: #0c3b57;
-    --footer-bg-color: #0c3b57;
+    --bg-color: #14213D;
+    --header-bg-color: #14213D;
+    --footer-bg-color: #0A111F;
     --text-color: #ffffff;
     --text-sec-color: #c7cdcf;
-    --navigator-bg-color: #FF9966;
+    --navigator-bg-color: #FCA311;
 
-    --navtitle-color: #fff;/*rgb(51, 143, 159);*/
+    --navtitle-color: #fff;
     --link-color: #ffffff;
     --link-color-hover: #ffffff;
     --header-link-color: #ffffff;
-    --shadow-color: #000000;
+    --shadow-color: #000;
 
-    --header-border-bottom-color: rgb(196, 188, 188);
-    --button-color: linear-gradient(to right, var(--bg-color),#09405c );
+    --header-border-bottom-color: #E5E5E5;
+    --button-color: linear-gradient(to right, var(--bg-color), #1B2E55);
     --bar-color: #ffffff;
+    --nav-buttons-hover: #FCA311;
+    --sun-moon-color: var(--text-color);
 }
-/* :root {
-    --bg-light: #ffffff;
-    --bg-dark: #004f6d;
-    --header-bg-dark: #0c3b57;
-    --header-bg-light: #c8c8c9;
-    --footer-bg-dark: #0c3b57;
-    --footer-bg-light: #c8c8c9;/*#b1b1b3;
-    --text-light: #000000;
-    --text-dark: #ffffff;
-    --text-sec: #c7cdcf;
-    
-    --navigator-dark: #FF9966;
-    --navigator-light: #FF9966;/*subject to change, maybe #006699, #CC6600
-    --navtitle-dark: rgb(51, 143, 159);
-    --navtitle-light: #000000;
-    --header-border-bottom-dark: rgb(196, 188, 188);
-    --header-border-bottom-light: lightblue;/*or skyblue
-    --button-light: linear-gradient(#141cfc, #304cf4);
-    --button-dark: linear-gradient(to right, #09405c, var(--bg-dark) );
-
-    /* --button-dark: ;
-} */
