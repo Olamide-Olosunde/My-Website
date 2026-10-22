@@ -3,7 +3,7 @@ html{
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
 }
 
 /* body */
@@ -15,7 +15,7 @@ body{
     margin: 0px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
 }
 /* header */
 header > nav > ul > li > a{
@@ -625,4 +625,27 @@ header a:hover{
     --bar-color: #ffffff;
     --nav-buttons-hover: #FCA311;
     --sun-moon-color: var(--text-color);
+}
+
+/* one-page navigation */
+html{
+    scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+}
+main > section{
+    scroll-margin-top: 90px;
+}
+#home{
+    scroll-margin-top: 100vh;
+}
+main > section + section{
+    padding-top: 10px;
+}
+header > nav > ul > li.active > a{
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }

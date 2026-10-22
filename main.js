@@ -175,3 +175,42 @@ function toggle(){
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
 }
+
+// one-page navigation
+// scroll to a section (used by the mobile menu buttons)
+function goTo(id)
+{
+    var menu = document.getElementById('mobile_menu');
+    if( menu.style.display === 'block' )
+        Hamburger(); // close the mobile menu first
+
+    var section = document.getElementById(id);
+    if( section )
+    {
+        section.scrollIntoView();
+        history.replaceState(null, '', '#' + id);
+    }
+}
+
+// update the header title and highlight the nav button for the section in view
+var sectionTitle = document.getElementById('section-title');
+var sections = document.querySelectorAll('main > section');
+var sectionNames = { home: 'Home', experience: 'Experience', projects: 'Projects' };
+
+if( 'IntersectionObserver' in window && sections.length > 0 )
+{
+    var observer = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+            if( !entry.isIntersecting )
+                return;
+            var id = entry.target.id;
+            if( sectionTitle )
+                sectionTitle.textContent = sectionNames[id] || id;
+            document.querySelectorAll('#menu a[data-section]').forEach(function(link){
+                link.parentElement.classList.toggle('active', link.dataset.section === id);
+            });
+        });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach(function(section){ observer.observe(section); });
+}
